@@ -1,0 +1,74 @@
+:root {
+    --background-color: #000000;
+    --font-color: #ffffff;
+    --primary-color: #adaaaa;
+    --secondary-color: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    background-color: var(--background-color);
+    gap: 1.5rem;
+    padding: 0,5rem 1.5rem;
+}
+
+#header-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#header-logo {
+    width: 2.5rem;
+    height: fit-content;
+    border-radius: 100%;
+}
+
+
+#header-nav ul {
+    display: flex;
+    color: var(--var-font-color);
+    font-size: 1.2rem;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+#header-nav ul li:first-child {
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+#header-seach-bar {
+    position: relative;
+}
+
+#header-search-bar input {
+    border-radius: 9px;
+    height: 1.8rem;
+    width: 18rem;
+    padding: 0 1 rem;
+}
+
+#header-search-bar button {
+    cursor: pointer;
+    height: 1.8rem;
+    width: 2rem;
+    border-radius: 9px;
+    background-color: var(--var-font-color);
+    padding: 0.2rem 0.5rem;
+    border: none;
+    position: absolute;
+}

@@ -3,6 +3,9 @@
     --font-color: #ffffff;
     --primary-color: #adaaaa;
     --secondary-color: #212121;
+    --accent-color: #ff5252;
+    --highlight-color: #444;
+    --hover-color: #333333;
 }
 
 * {
@@ -83,3 +86,114 @@ header {
 #search-icon {
     width: 0.8rem;
 }
+
+#hero {
+    background-image: url('/assets/banner.jpg') ;
+    background-size: cover;
+    background-position: center;
+    padding: 6.7rem 2.7rem;
+    text-align: center;
+    color: var(--font-color);
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+#hero p {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+#Sobre {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#Sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}
+
+.modelos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--highlight-color);
+    border-radius: 16px;
+    padding: 1rem;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--font-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    color: var(--font-color);
+}
+
+footer .redes ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+footer .redes li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+footer .redes i {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    transition: color 0.3s;
+}
+
+footer .redes i:hover {
+    color: var(--primary-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
